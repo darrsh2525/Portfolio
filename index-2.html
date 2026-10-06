@@ -95,11 +95,15 @@ nav{position:sticky}
 .fres{display:flex;gap:.8rem;align-items:flex-start;margin-top:.9rem;font-size:.92rem}
 .pill2{flex:none;font-weight:700;padding:.3rem .9rem;border-radius:999px;color:#101A33}
 .visa{display:inline-block;margin:0 0 1.25rem;padding:.3rem .9rem;border:1px solid rgba(255,255,255,.3);border-radius:999px;font-size:.95rem;font-weight:600}
+.cvframe{width:100%;height:85vh;min-height:620px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.cvalt{color:var(--ink);border-color:var(--line)}
+.cvnote{display:none;color:var(--mute);margin:.25rem 0 0}
+@media(max-width:700px){.cvframe{display:none}.cvnote{display:block}}
 @media(prefers-reduced-motion:reduce){.bar{transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<nav><span id="prog"></span><div class="wrap"><b>Darrshan Mahendran</b><div><a class="hide" href="#projects">Projects</a><a class="hide" href="#experience">Experience</a><a class="hide" href="#education">Education</a><a class="pill" href="#contact">Contact</a></div></div></nav>
+<nav><span id="prog"></span><div class="wrap"><b>Darrshan Mahendran</b><div><a class="hide" href="#projects">Projects</a><a class="hide" href="#experience">Experience</a><a class="hide" href="#education">Education</a><a class="hide" href="#cv">CV</a><a class="pill" href="#contact">Contact</a></div></div></nav>
 
 <header class="hero"><div class="wrap">
 <div>
@@ -110,6 +114,7 @@ nav{position:sticky}
 <div class="cta">
 <a class="btn" href="mailto:darrsh2525@gmail.com" target="_blank" rel="noopener">Email me</a>
 <a class="btn alt" href="https://www.linkedin.com/in/darrshan-mahendran-163a2a295" rel="noopener">LinkedIn</a>
+<a class="btn alt" href="Darrshan_Graduate_CV_2026.pdf" download>Download CV</a>
 <button class="btn alt" id="copy" type="button">Copy email</button>
 </div>
 </div>
@@ -208,6 +213,16 @@ nav{position:sticky}
 </article>
 </div>
 </section>
+<section id="cv">
+<h2>CV</h2>
+<p class="intro">Read it here or take a copy with you.</p>
+<div class="cta" style="margin-bottom:1.25rem">
+<a class="btn" href="Darrshan_Graduate_CV_2026.pdf" download>Download CV</a>
+<a class="btn alt cvalt" href="Darrshan_Graduate_CV_2026.pdf" target="_blank" rel="noopener">Open in new tab</a>
+</div>
+<iframe class="cvframe" src="Darrshan_Graduate_CV_2026.pdf#view=FitH" title="Darrshan Mahendran CV" loading="lazy"></iframe>
+<p class="cvnote">Tap Open in new tab to read the CV on your phone.</p>
+</section>
 </main>
 
 <footer class="contact" id="contact"><div class="wrap">
@@ -216,6 +231,7 @@ nav{position:sticky}
 <div class="cta">
 <a class="btn" href="mailto:darrsh2525@gmail.com" target="_blank" rel="noopener">Email me</a>
 <a class="btn alt" href="https://www.linkedin.com/in/darrshan-mahendran-163a2a295" rel="noopener">LinkedIn</a>
+<a class="btn alt" href="Darrshan_Graduate_CV_2026.pdf" download>Download CV</a>
 </div>
 <p style="margin-top:1.25rem;font-size:.95rem">Email: <a href="mailto:darrsh2525@gmail.com" target="_blank" rel="noopener">darrsh2525@gmail.com</a></p>
 </div></footer>
